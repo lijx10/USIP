@@ -1,0 +1,34 @@
+------------ Options -------------
+activation: relu
+batch_size: 2
+bn_momentum: 0.1
+bn_momentum_decay: 0.6
+bn_momentum_decay_step: None
+checkpoints_dir: ./checkpoints
+dataroot: /ssd/jiaxin/USIP/USIP_datasets/oxford
+dataset: oxford
+device: cuda:1
+display_id: 101
+display_winsize: 256
+gpu_ids: [1]
+input_pc_num: 16384
+is_height_scaling: True
+k: 1
+keypoint_on_pc_alpha: 1
+keypoint_on_pc_type: point_to_point
+keypoint_outlier_thre: 3
+loss_sigma_lower_bound: 0.001
+lr: 0.001
+nThreads: 10
+name: train
+node_knn_k_1: 16
+node_num: 512
+normalization: batch
+random_pc_dropout_lower_limit: 1
+rot_3d: False
+rot_horizontal: True
+rot_perturbation: False
+scene: outdoor
+surface_normal_len: 4
+translation_perturbation: False
+-------------- End ----------------
