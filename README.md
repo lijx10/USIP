@@ -44,8 +44,15 @@ python3 setup.py install
 ## Dataset
 [This Google Drive link](https://drive.google.com/open?id=1e3m4jZxtJmBbtPoL2nIYVGPN9G4-p8fg) contains datasets used in our paper: KITTI, Oxford RobotCar, 3DMatch, ModelNet40, Redwood, SceneNN.
 
+## Trained Models
+[This Google Drive link](https://drive.google.com/open?id=1aUX5yEsTjwZmBzEOGdKUgq80NQQNJ3d9) contains our trained models for some datasets.
+
 ## Usage
 Each folder of `kitti`, `match3d`, `modelnet`, `oxford`, `scenenn` contains configuration script `ooptions_***` and training scripts `train_***`. Please modify the configurations files before running the training scripts. For example, you may have to modify the default value of `--dataset`, `--dataroot`, `--gpu_ids`.
+
+## Evaluation
+1. Save detected keypoints via ``evaluation/save_keypoints.py``
+2. Run Matlab based evaluation code via ``evaluation/matlab``
 
 ### Visualization
 We use visdom for visualization. Various loss values and the reconstructed point clouds (in auto-encoder) are plotted in real-time. Please start the visdom server before training, otherwise there will be warnings/errors, though the warnings/errors won't affect the training process.
