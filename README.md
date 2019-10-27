@@ -40,6 +40,11 @@ python3 setup.py install
 cd models/ball_query_ext
 python3 setup.py install
 ```
+- Python wrapper over PCL point cloud keypoint detectors: ISS, Harris3D, SIFT3D: https://github.com/lijx10/PCLKeypoints
+```
+python3 setup.py install
+```
+
 
 ## Dataset
 [This Google Drive link](https://drive.google.com/open?id=1e3m4jZxtJmBbtPoL2nIYVGPN9G4-p8fg) contains datasets used in our paper: KITTI, Oxford RobotCar, 3DMatch, ModelNet40, Redwood, SceneNN.
